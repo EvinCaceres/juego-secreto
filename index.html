@@ -1,0 +1,53 @@
+<!--Cada una de las diferentes partes de un codigo de html esta compuesta por etiquetas, o popularmente llamadas tags.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1><!--etiqueta para colocar un titulo en el parrafo-->
+                    <p class="texto__parrafo"></p> <!--etiqueta para colocar texto en el parrafo-->
+                </div>
+                <input type="number"id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="VerificarIntento();" class="container__boton">Intentar</button> <!--etiqueta para colocar el primer boton-->
+                <!--el evento onclick da accion a lo que puede hacer o interactuar en un boton, en el caso este
+                se define y se llama a una funcion desde html a javascrip"se diferencia d las variables porque siempre llevan un (), y da accion a una accion""-->  
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button><!--segundo boton-->
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script> <!-- en html este es el codigo para escribir comentarios (<1--), -->
+        <!--la etiqueta script sirve para llamar una pagina diferente, como en este caso una pag de codigo de javascrip-->
+</body>
+
+</html>
+<!--al interactuar con html javascrip actuaria como lenguaje interpretado y el navegador actuaria como el interprete, esta 
+interpretacion se le conoe como el "document objet model" que en este caso serian los diferentes cuadros o cajas que se moldean
+para que javascrip los pueda interpretar-->
+<!--Html seria la estructura de la pagina mediante etiquetas en forma gerarquica estructurada
+    css seria los diferentes estilos que se colocan en esta
+    javascrip seria la parte funcional, la parte interactiva de un sistema o pagina-->
+
+    <!-- el metodo selector es el cual sirve como un modelo de autogestion y coreector en los diferentes modelos, como por ejemplo
+     public: y se nos muestras diferentes posibles selecciones de codigo que pueden complementar : static void-->
